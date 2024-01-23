@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<div class="box">
+	<div class="inputBox">
+		<input type="Password" id="pswrd" placeholder="Password" onkeyup="checkPassword(this.value)">
+		<span id="toggleBtn"></span>
+	</div>
+	<div class="validation">
+		<ul>
+			<li id="lower">At least one lowercase character</li>
+			<li id="upper">At least one uppercase character</li>
+			<li id="number">At least one number</li>
+			<li id="special">At least one special character</li>
+			<li id="length">At least 8 characters</li>
+		</ul>
+	</div>
+</div>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
