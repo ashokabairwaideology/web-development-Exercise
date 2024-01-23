@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Kanit:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Kanit', sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+    --background : linear-gradient(90deg, rgba(238,172,49,1) 0%, rgba(255,228,130,1) 39%, rgba(193,249,184,1) 54%, rgba(162,255,140,1) 64%, rgba(0,252,20,1) 100%);
+}
+
+body{
+    background: var(--background);
+}
+
+
+.back{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)) , url(./images/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    max-width: 1150px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* --------------- NAVBAR STYLING START ----------- */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.logo{
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: rgb(237, 120, 77);
+    cursor: pointer;
+}
+
+.logo1{
+    color: #f9fbfe;
+    
+}
+
+.logo2{
+    color: rgb(32, 139, 32);
+}
+
+.nav-list{
+    /* position:fixed; */
+    display: flex;
+    list-style-type: none;
+    padding: 2rem 0;
+    
+}
+
+.nav-links{
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+    margin  : 0.2rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links:hover{
+    color: #f9fbfe;
+}
+
+.active{
+    color: rgb(237, 120, 77);
+}
+
+.last{
+    color: rgb(32, 139, 32);
+}
+
+.middle{
+    color: 	#fff3e9;
+}
+
+/* --------------- NAVBAR STYLING END ----------- */
+
+
+/* --------------- MAIN TEXT STYLING START ----------- */
+
+.main{
+    height: 91.4vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.jai{
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-weight: 800; 
+    opacity: 1;
+    color: rgb(237, 120, 77);
+    text-align: center;
+    font-size: 10rem;
+}
+
+.india{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 1.9em;
+    padding-left: 1.9em;
+}
+
+.happy{
+    font-size: 4.5rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding-left: 0.1em;
+    text-transform: uppercase;
+}
+
+.para{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.btn{
+    color: rgb(237, 120, 77);
+    font-size: 1.8rem;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    padding: 0.8rem 2rem;
+    align-items: center;
+    margin-top: 2rem;
+    border: 3px solid rgb(237, 120, 77);
+    background: #f9fbfe;
+    border-radius: 25px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    transition: all 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.btn:hover{
+    background: rgb(237, 120, 77);
+    color: #f9fbfe;
+
+}
+
+
+/* --------------- MAIN TEXT STYLING END ----------- */
+
+/* --------------- SECTION STYLING START ----------- */
+
+
+
+.text-2{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+.text-2 h1{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 4.2rem;
+    letter-spacing: 0.1em;
+    width: fit-content;
+    border-bottom: 4px solid rgb(237, 120, 77);
+    border-radius: 1px;
+
+}
+
+.text-2 p{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+
+.freedom-fighters{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 2rem;
+    align-items: center;
+    
+}
+
+
+.indian{
+    width: 100%;
+    height: 500px;
+    flex-basis: 30%;
+}
+
+.indian:hover img{
+    scale: 110%;
+    transition: all 0.3s ease-in-out;  
+}
+
+
+.indian img{
+    width: 350px;
+    scale: 100%;
+}
+
+.indian-text{
+    flex-basis: 65%;
+    
+}
+
+.indian-text h1{
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    border-bottom: 5px solid rgb(237, 120, 77);
+}
+
+.indian-text h2{
+    font-size: 2.5rem; 
+    padding: 1rem 0; 
+    text-transform: uppercase;
+}
+
+.indian-text p{
+    font-size: 1.8rem;
+}
+
+/* --------------- SECTION STYLING END ----------- */
+
+
+/* --------------- ABOUT STYLING START ----------- */
+
+
+.banner-2{
+    width: 100%;
+    height: 50vh;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(./images/2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    letter-spacing: 0.5em;
+    margin-top: 5rem;
+    font-size: 3.8rem;
+    font-weight: 900;
+    color: #f9fbfe;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.block{
+    display: flex;
+    margin: 3rem 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.img{
+    flex-basis: 45%;
+    
+}
+
+.img img{
+    width: 100%;
+}
+
+.text-4{
+    flex-basis: 50%;
+    padding-left: 5rem;
+    background: url(./images/unity.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-4 h3{
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    text-align: left;
+    flex-basis: 50%;
+    letter-spacing: 0.2em;
+}
+
+.text-4 p{
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+
+
+
+
+/* --------------- ABOUT STYLING END ----------- */
+
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)) , url(./images/4.jpg);
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2rem;
+    height: 40vh;
+    width: 100%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.footer h1{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+    color: #f1fdf6;
+}
+
+
+
